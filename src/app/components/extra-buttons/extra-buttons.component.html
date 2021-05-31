@@ -1,0 +1,10 @@
+<section class="container-buttons">
+    <p class="btns-title">{{buttons.buttonsTitle}}</p>
+    <button *ngFor="let btn of buttons.btns; let i = index" class="btn" [class.selected]="selectedButton === i+btn.id" (click)="selectedButton = i+btn.id;">
+        <section class="btn-inner">
+            <p class="title">{{btn.title}}  </p>
+            <p class="description" *ngIf="btn.description">{{btn.description}}</p>
+        </section>
+        <span class="title" *ngIf="btn.price"> + {{'$' + btn.price}} </span>
+    </button>
+</section>

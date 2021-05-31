@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'circular-medium';
+    src: url('../src/assets/fonts/Circular-Std-Medium.otf');
+}
+
+@font-face {
+    font-family: 'circular-book';
+    src: url('../src/assets/fonts/Circular-Std-Book.otf');
+}
+@font-face {
+    font-family: 'circular-bold';
+    src: url('../src/assets/fonts/Circular-Std-Bold.otf');
+}
+
+// variables 
+
+$font-gray: #6B7280;
+$font-red: #CB253C;
+$font-black: #111111;
+$font-light-gray: #EEEFF2;
+
+
+
+
+

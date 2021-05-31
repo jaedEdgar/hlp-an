@@ -1,0 +1,8 @@
+<section class="img-container">
+    <img src="{{urlSelected}}" alt="" [className]="classSelected">
+</section>
+<section class="slider-container">
+    <button class="img" *ngFor="let image of images" (click)="selectImage(image)">
+        <img src="{{image.url}}" alt="" [className]="image.class">
+    </button>
+</section>

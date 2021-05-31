@@ -1,0 +1,8 @@
+<section class="tabs-header">
+    <section *ngFor="let tab of tabs; let i = index" (click)="selectedTab = i">
+       <label [class.selected] ="i === selectedTab" [class.unselected]="i !== selectedTab">{{tab.tabTitle}} </label>
+    </section> 
+</section>
+<section class="tab-content">
+    {{tabs[selectedTab].content}}
+</section>
