@@ -1,40 +1,36 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .specifications-container {
-    width: 592px;
-    height: 319px;
-    margin-bottom: 150px;
-    margin-top: 72px;
-    p {
-        font-family: "circular-bold";
-        font-size: 19.2px;
-        line-height: 1.25;
-        font-weight: 500;
-        margin-bottom: 5px;
+  height: 319px;
+  margin-bottom: 150px;
+  margin-top: 72px;
+  p {
+    font-family: "circular-bold";
+    font-size: 19.2px;
+    line-height: 1.25;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px 0;
+      border-top: 1px solid $font-light-gray;
+      font-size: 14px;
+      font-family: "circular-bold";
     }
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        li{
-            display: flex;
-            justify-content: space-between;
-            padding: 17px 0;
-            border-top: 1px solid $font-light-gray;
-            font-size: 14px;
-            font-family: 'circular-bold';
-        }
-        li:last-child{
-            border-bottom: 1px solid $font-light-gray;
-        }
+    li:last-child {
+      border-bottom: 1px solid $font-light-gray;
     }
-    
+  }
 }
 
-@media(max-width: 1024px){
-    .specifications-container {
-        width: 450px;
-    }
-
+@media (max-width: 1024px) {
+  .specifications-container {
+  }
 }

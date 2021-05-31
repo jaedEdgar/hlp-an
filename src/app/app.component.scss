@@ -1,72 +1,78 @@
+@import "../app//scss/mixins";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .content {
-    width: 88vw;
-    padding: 0 5vw;
-    margin-top: 145px;
-    position: relative;
-    display: flex;
+  width: 100%;
+  display: flex;
+  margin: 45px auto 0;
+  @include media-xs {
+    flex-direction: column;
+    max-width: 680px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  @include media-sm {
+    flex-direction: column;
+    max-width: 680px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  @include media-md {
+    max-width: 1248px;
+    padding: 0 15px;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.fixed {
+  position: sticky;
+  top: 0px;
+}
+.carrusel-container,
+.info-tabs {
+  @include media-xs {
+    width: 100%;
+  }
+  @include media-sm {
+    width: 100%;
+  }
+  @include media-md {
+    width: 50%;
+  }
+}
+.info-tabs {
+  padding-left: 33px;
+  overflow: hidden;
+  max-width: 625px;
+  @include media-sm {
+    margin-top: 70px;
+  }
+}
+.icons-view {
+  padding: 20px;
+  display: flex;
+  @include media-xs {
+    flex-direction: column;
     justify-content: center;
+    margin-left: 10px;
   }
-  .fixed{
-      position: sticky;
-      top: 0px;
-  }
-  .carrusel-container{
-    margin-left: -5px;
-  }
-  .info-tabs{
-    margin-left: 27px;
-  }
-  .icons-view{
-    width: 565px;
-    padding: 20px;
+  @include media-sm {
+    padding: 15px;
+    width: 100%;
     display: flex;
-    .text-center{
-       text-align: center;
-       width: 205px;
-       font-size: 14px;
-       font-family: 'circular-book';
+    justify-content: space-between;
+    .text-center {
+      width: 30%;
     }
   }
 
-  @media(max-width: 1024px){
-    .icons-view{
-      width: 450px;
-      padding: 15px;
-
-    }
+  .text-center {
+    text-align: center;
+    font-size: 14px;
+    font-family: "circular-book";
   }
-  @media(max-width: 768px){
-    .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .info-tabs{
-      margin-top: 70px;
-      margin-left: 27px;
-    }
-    .icons-view{
-      width: 565px;
-      padding: 15px;
-
-    }
-
-  }
-  @media(max-width:520px){
-    .icons-view{
-      width: 400px;
-      margin-left: 40px
-
-    }
-  }
-
-  @media(max-width: 411px){
-    .icons-view{
-      flex-direction: column;
-      justify-content: center;
-      width: 400px;
-      margin-left: 10px;
-    }
-    
-  }
+}

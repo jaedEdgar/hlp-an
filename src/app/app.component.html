@@ -5,28 +5,28 @@
       <app-carrousel-view></app-carrousel-view>
       <section class="icons-view">
         <section class="text-center">
-            <img src="../assets/img/Path.png" alt="">
-            <p>Customizable Touch Controls</p>
+          <img src="../assets/img/Path.png" alt="" />
+          <p>Customizable Touch Controls</p>
         </section>
         <section class="text-center">
-          <img src="../assets/img/Shape.png" alt="">
-          <p> Build-in Equalizer</p>
-      </section>
-      <section class="text-center">
-        <img src="../assets/img/Combined Shape.png" alt="">
-        <p>Active Noise Cancellation</p>
-    </section>
+          <img src="../assets/img/Shape.png" alt="" />
+          <p>Build-in Equalizer</p>
+        </section>
+        <section class="text-center">
+          <img src="../assets/img/Combined Shape.png" alt="" />
+          <p>Active Noise Cancellation</p>
+        </section>
       </section>
     </section>
   </section>
-   <section class="info-tabs">
-     <app-info-view></app-info-view>
-     <app-tabs-view></app-tabs-view>
-     <app-finish-choose></app-finish-choose>
-     <ng-container *ngFor="let buttonsSet of buttons">
-      <app-extra-buttons [buttons] ="buttonsSet"></app-extra-buttons>
-     </ng-container>
-      <app-specifications [list] ="specifications"></app-specifications>
-   </section>
-   <app-footer></app-footer>
+  <section class="info-tabs">
+    <app-info-view></app-info-view>
+    <app-tabs-view></app-tabs-view>
+    <app-finish-choose></app-finish-choose>
+    <ng-container *ngFor="let buttonsSet of buttons">
+      <app-extra-buttons [buttons]="buttonsSet"></app-extra-buttons>
+    </ng-container>
+    <app-specifications [list]="specifications"></app-specifications>
+  </section>
+  <app-footer></app-footer>
 </div>
